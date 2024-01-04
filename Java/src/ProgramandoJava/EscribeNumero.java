@@ -8,7 +8,7 @@ public class EscribeNumero{
 		
 		int num; //guardamos en esta variable el número que se introduzca
 		
-		System.out.println("Escriba un número: ");//mensaje por consola
+		System.out.println("Escribe un número: ");//mensaje por consola
 		Scanner sc = new Scanner(System.in);
 	    
 		num = sc.nextInt();//Entrada por consola
