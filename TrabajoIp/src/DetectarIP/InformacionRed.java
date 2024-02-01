@@ -27,10 +27,10 @@ public class InformacionRed {
 
                  if (direccionIP instanceof Inet4Address) {
                      // IPv4
-                     System.out.printf("   Dirección IPv4: %s%n", direccionIP.getHostAddress());
+                     System.out.printf("   Direccion IPv4: %s%n", direccionIP.getHostAddress());
                  } else if (direccionIP instanceof Inet6Address) {
                      // IPv6
-                     System.out.printf("   Dirección IPv6: %s%n", direccionIP.getHostAddress().split("%")[0]);
+                     System.out.printf("   Direccion IPv6: %s%n", direccionIP.getHostAddress().split("%")[0]);
                  }
 
                  // Obtener la puerta de enlace (si es la interfaz principal)
@@ -45,14 +45,14 @@ public class InformacionRed {
                      for (int i = 0; i < mac.length; i++) {
                          direccionMac.append(String.format("%02X%s", mac[i], (i < mac.length - 1) ? "-" : ""));
                      }
-                     System.out.printf("   Dirección MAC: %s%n", direccionMac.toString());
+                     System.out.printf("   Direccion MAC: %s%n", direccionMac.toString());
                  }
                  System.out.println();
              }
          }
 
      } catch (SocketException e) {
-         System.err.println("Error al obtener información de red: " + e.getMessage());
+         System.err.println("Error al obtener informacion de red: " + e.getMessage());
      }
  }
 
